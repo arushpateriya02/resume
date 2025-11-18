@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arush Pateriya — Resume</title>
+  <style>
+    :root{--accent:#0b66ff;--muted:#6b7280;--bg:#f7f8fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;line-height:1.45;color:#0f172a;background:var(--bg);padding:32px}
+    .container{max-width:900px;margin:0 auto}
+    .card{background:var(--card);border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(12,15,30,0.08)}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#6bc7ff);color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:24px}
+    .title{color:var(--muted);margin-top:6px}
+    .contact{margin-left:auto;text-align:right}
+    .pill{display:inline-block;background:#eef6ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+
+    .layout{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
+    .section{margin-bottom:18px}
+    .section h2{font-size:14px;margin:0 0 10px 0;color:#111827;border-bottom:1px dashed #e6eefc;padding-bottom:8px}
+    .muted{color:var(--muted);font-size:14px}
+
+    ul{margin:8px 0 0 16px}
+    .skill-badges{display:flex;flex-wrap:wrap;gap:8px}
+    .badge{background:#f1f5f9;padding:6px 10px;border-radius:8px;font-weight:600;font-size:13px}
+    .job{margin-bottom:14px}
+    .job .meta{font-weight:600}
+    .job .period{color:var(--muted);font-size:13px}
+    .project{background:#fbfdff;padding:12px;border-radius:10px;border:1px solid #eef6ff}
+
+    .download{margin-top:18px;display:inline-flex;gap:10px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(11,102,255,0.12)}
+
+    @media (max-width:860px){
+      .layout{grid-template-columns:1fr;}
+      .contact{text-align:left;margin-left:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">AP</div>
+        <div>
+          <h1>Arush Pateriya</h1>
+          <div class="title muted">Data Scientist • Machine Learning Engineer • C++ Enthusiast</div>
+          <div style="margin-top:8px;color:var(--muted)">B.Tech CSE — Bennett University</div>
+        </div>
+
+        <div class="contact">
+          <div class="pill">Open to work</div>
+          <div style="margin-top:10px;font-size:14px;color:#0b1220">arush.pateriya@example.com</div>
+          <div class="muted">+91 98765 43210 • Bengaluru, India</div>
+          <div class="muted">github.com/arush-p • linkedin.com/in/arush-pateriya</div>
+        </div>
+      </header>
+
+      <div class="layout">
+        <main>
+          <section class="section">
+            <h2>Professional Summary</h2>
+            <p class="muted">Data scientist with 3+ years of experience building production ML systems and analytics for consumer-facing products. Strong background in C++, Python, model deployment, and experimental design. Passionate about interpretable ML, performance optimization, and building elegant visualizations for stakeholders.</p>
+          </section>
+
+          <section class="section">
+            <h2>Experience</h2>
+
+            <div class="job">
+              <div class="meta">Senior Data Scientist — NovaBeauty (imaginary)</div>
+              <div class="period">Jul 2023 — Present • Bengaluru, India</div>
+              <ul class="muted">
+                <li>Led a recommendation pipeline that increased conversion by 12% using hybrid collaborative filtering + content models.</li>
+                <li>Implemented a C++ microservice for real-time scoring, reducing latency from 200ms to 35ms.</li>
+                <li>Designed A/B tests and causal inference analyses to measure product impact; presented findings to exec leadership.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="meta">Data Scientist — SkyFare Airlines (imaginary)</div>
+              <div class="period">Jul 2021 — Jun 2023 • Gurugram, India</div>
+              <ul class="muted">
+                <li>Built price-forecasting and demand models used in dynamic pricing decisions; improved revenue per seat by 4%.</li>
+                <li>Collaborated with backend engineers to deploy models using Docker and REST APIs; created monitoring dashboards.</li>
+              </ul>
+            </div>
+
+          </section>
+
+          <section class="section">
+            <h2>Projects</h2>
+            <div class="project">
+              <strong>Amazon Review Sentiment Analyzer</strong> — End-to-end pipeline that scraped reviews, trained transformer-based sentiment model, and deployed a Flask API for batch scoring. Includes a dashboard for monitoring drift and performance.
+            </div>
+            <div style="height:8px"></div>
+            <div class="project">
+              <strong>Real-time Anomaly Detection</strong> — C++ and Python hybrid system for detecting anomalies in streaming telemetry with sub-second alerts and an adaptive thresholding algorithm.
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Education</h2>
+            <div class="muted">B.Tech, Computer Science & Engineering — Bennett University (2020)</div>
+            <ul class="muted">
+              <li>Relevant coursework: Machine Learning, Computer Networks, Data Structures & Algorithms, Database Systems</li>
+              <li>Graduation project: "Optimized Matrix Multiplication Patterns for GPU" (implemented CUDA optimizations)</li>
+            </ul>
+          </section>
+
+        </main>
+
+        <aside>
+          <section class="section">
+            <h2>Skills</h2>
+            <div class="skill-badges">
+              <span class="badge">C++</span>
+              <span class="badge">Python</span>
+              <span class="badge">PyTorch</span>
+              <span class="badge">scikit-learn</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Docker</span>
+              <span class="badge">AWS</span>
+              <span class="badge">Linux</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Certifications</h2>
+            <div class="muted">Google Cloud ML Engineer (imaginary) • Coursera Deep Learning Specialization</div>
+          </section>
+
+          <section class="section">
+            <h2>Tools & Frameworks</h2>
+            <ul class="muted">
+              <li>Git, JIRA, Airflow</li>
+              <li>Prometheus + Grafana</li>
+              <li>FastAPI, Flask</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>Interests</h2>
+            <div class="muted">Competitive programming, Open-source, Visualizing data, Chess</div>
+          </section>
+
+          <div class="download">
+            <button class="btn" onclick="window.print()">Print / Save PDF</button>
+            <button class="btn ghost" onclick="copyEmail()">Copy Email</button>
+          </div>
+
+          <script>
+            function copyEmail(){
+              navigator.clipboard && navigator.clipboard.writeText('arush.pateriya@example.com')
+                .then(()=> alert('Email copied to clipboard'))
+                .catch(()=> prompt('Copy email', 'arush.pateriya@example.com'))
+            }
+          </script>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
